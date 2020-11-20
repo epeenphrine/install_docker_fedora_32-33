@@ -1,3 +1,4 @@
+#!/bin/sh
 #remove conflicts
 dnf remove docker-* -y ; dnf config-manager --disable docker-* -y ;
 #syste prep
