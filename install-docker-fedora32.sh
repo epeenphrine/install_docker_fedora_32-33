@@ -13,10 +13,11 @@ dnf install moby-engine docker-compose &&
 # systemctl enable
 systemctl enable docker &&
 systemctl start docker &&
-
 # running as admin
-groupadd docker
-usermod -aG docker dong
+groupadd docker;
+usermod -aG docker dong;
+# remove /etc/firewalld/zonees/trusted.xml
+rm -f /etc/firewalld/zones/trusted.xml
 
 
 
